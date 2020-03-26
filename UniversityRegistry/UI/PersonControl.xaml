@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:UniversityRegistry.UI"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="400">
-    <Border Padding="10" BorderBrush="Gray">
+    <Border Padding="10">
         <StackPanel>
             <TextBlock FontSize="18">Personal Details</TextBlock>
             

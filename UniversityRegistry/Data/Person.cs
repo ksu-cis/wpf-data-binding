@@ -10,6 +10,11 @@ namespace UniversityRegistry.Data
     public class Person
     {
         /// <summary>
+        /// The next ID to assign to a newly-created person
+        /// </summary>
+        public static uint NextID = 80000000;
+
+        /// <summary>
         /// The uinque identifier of this person
         /// </summary>
         public uint ID { get; private set; }
@@ -38,6 +43,13 @@ namespace UniversityRegistry.Data
         /// The person's role
         /// </summary>
         public Role Role { get; set; }
-
+        
+        /// <summary>
+        /// Creates a new user, assigning them an ID
+        /// </summary>
+        public Person()
+        {
+            ID = NextID++;
+        }
     }
 }
